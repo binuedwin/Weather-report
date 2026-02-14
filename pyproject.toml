@@ -9,6 +9,8 @@ description = "Weather report generator for all countries"
 requires-python = ">=3.10"
 dependencies = [
     "requests>=2.31.0",
+    "fastapi>=0.110.0",
+    "uvicorn[standard]>=0.27.0",
 ]
 
 [project.optional-dependencies]
@@ -16,6 +18,7 @@ dev = [
     "pytest>=7.4.0",
     "pytest-cov>=4.1.0",
     "ruff>=0.1.0",
+    "httpx>=0.27.0",
 ]
 
 [project.scripts]
